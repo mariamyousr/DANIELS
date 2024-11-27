@@ -1,0 +1,258 @@
+
+
+*{
+    box-sizing: border-box;
+}
+h1{
+    font-size: 50px;
+}
+
+section{
+    margin: 50px 0;
+}
+html{
+    scroll-padding: 60px;
+}
+.bg{
+    background: #f7f7f7;
+}
+/* start nav */
+.navbar a{
+    font-size: 14px;
+    font-weight: 600;
+    padding: 0;
+    white-space: nowrap;
+    transition: 0.3s;
+    letter-spacing: 0.4px;
+    position: relative;
+    
+}
+.navbar .nav-link.active::after{
+    width: 100%;
+
+}
+.navbar .nav-link::after{
+    content: '';
+    background-color: black;
+    width: 0%;
+    height: 3px;
+    position: absolute;
+    left: 0;
+    transition: 0.5s;
+    bottom: 0;
+}
+ 
+.navbar .nav-link:hover::after{
+    width: 100%;
+}
+.navbar .nav-item{
+    margin-left: 10px;
+} 
+.navbar .nav-link{
+    position: relative;
+   
+}
+.dropdown-toggle::after{
+    display: inline-block;
+    margin-left: .255em;
+    vertical-align: .255;
+    content: "";
+    border-top: .0 solid;
+    border-right: .0 solid transparent;
+    border-bottom: 0;
+    border-left: .0 solid transparent;
+}
+/* end nav */
+/* start header */
+header{
+    background-image:linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(../imgs/bg\ \(1\).jpg);
+    background-position: center;
+    background-size: cover;
+    position: relative;
+    
+}
+
+.max-w-600{
+    width: 600px;
+}
+header .home-text h3{
+    font-size: 50px;
+    font-weight: 800;
+    margin-bottom: 10px;
+    font-family: "Montserrat", sans-serif;
+}
+header .home-text h1{
+    font-weight: 400;
+    font-family: "Poppins", sans-serif;
+}
+ .icons{
+    margin-top: 200px;
+    font-size: 14px;
+    line-height: 35px;
+    position: absolute;
+   
+}
+li{
+    background-color: transparent;
+}
+/* end header */
+/* start about */
+
+.progress-bar{
+
+    background-color: black;
+}
+.progress{
+    border-radius: 0;
+}
+.about-p{
+    letter-spacing: 2px;
+}
+
+
+/* end about */
+/* start services */
+.text-services i {
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 5px ;
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   transition: 0.4s;
+}
+.text-services:hover i {
+    background-color: black;
+    color: white;
+}
+
+/* end services */
+/* start portfolio */
+.work-layar {
+    inset: 0;
+    position: absolute;
+    opacity: 0;
+    background-color:rgba(0,0,0,0.6);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    transition: 0.5s;
+    
+    
+}
+.work-layar i{
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    border: 1px solid #111;
+    background-color: #111;
+    color: #eee;
+
+}
+.work-detalis{
+    transform: translateY(200px);
+    transition: 0.4s;
+}
+.work-img:hover .work-detalis{
+    transform: translateY(0);
+
+}
+.work-img:hover .work-layar{
+   opacity: 1;
+}
+.nav.nav-pills{
+    width: fit-content;
+    margin: auto;
+}
+.nav-link{
+    color: #000;
+}
+ .nav-link:hover{
+    color: #000;
+}
+/* end portfolio */
+/* start clients */
+
+
+.carousel-item img{
+    width: 150px;
+}
+.carousel-indicators [data-bs-target]{
+    width: 10px;
+    height: 10px;
+    background-color: black;
+    border-radius: 50%;
+}
+
+/* end client */
+/* start icons-1 */
+#icons-1 i{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+    display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#icons-1 span{
+    font-size: 40px;
+    font-weight: 40px;
+}
+/* end icons-1 */
+/* start team */
+#team h3{
+   background-color: rgba(0,0,0,0.5);
+}
+.team-layer{
+    width: 30px;
+    height: 30px;
+    line-height: 28px;
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+   
+}
+/* end team */
+
+.contact-details i{
+    width: 65px;
+    height: 65px;
+    border-radius: 50%;
+    border: 5px ;
+    background-color: lavender;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+   transition: 0.4s;
+   margin: auto;
+
+}
+.contact-details:hover i{
+    background-color: black;
+    color: white;
+
+}
+.btn-form{
+    padding: 8px;
+    border-color: transparent;
+    width: fit-content;
+    background-color: black;
+    color: #eee;
+    margin: 6px;
+   
+    
+}
+.btn-form:hover{
+    background-color: #eee;
+    transition: o.5s;
+}
+
+
+
+    
